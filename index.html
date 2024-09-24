@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Domein.shop</title>
+    <title>Wheater app</title>
     <!--reset defaulds-->
     <link rel="stylesheet" href="styles/resetStyle.css"/>
     <!--Load new custom stylesheet-->
@@ -16,128 +16,167 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="styles/poppins_fond.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body>
+<body id="page-container">
 
 <header>
-    <section>
-
-<!--        <img alt="bergachtergrond" src="assets/images/mountains.jpg" width="1000" height="500"/>-->
-
-        <div class="center">
-            <h1>Domein.shop</h1>
-            <p class="pSmal">Jouw domeinnaam registreren in slechts 1 minuut!</p>
-            <div class="green-border" style="max-width: 20rem; min-width: 15rem;">
-                <div class="flex-center pNormal" >
-                    <p style="width: 125%" class="Blokje ">Is jouw domein nog vrij?</p>
-                    <button  class="Blokje g-button ">Check beschikbaarheid</button>
-                </div>
-            </div>
+    <section class="flex-ver-center-con">
+        <div class="page-icon" style="margin-left: 20px; width: 30px">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" xml:space="preserve">
+            <path fill="#FFFFFF" d="m89.738 17.398 3.898.84-2.67 12.39-3.897-.84zM69.905 18.72l3.86 12.066L69.968 32l-3.86-12.066zM49.597 31.053l9.345 8.512-2.685 2.948L46.912 34zM109.043 83.388l9.344 8.516-2.686 2.948-9.344-8.516zM115.669 67.396l12.33 2.684-.847 3.896-12.331-2.685zM125.461 46.352l1.222 3.795-12.018 3.868-1.221-3.795zM111.463 27.07l2.959 2.672-8.477 9.39-2.959-2.671z"/><g>
+            <path fill="#FFFFFF" d="m94.486 89.054-1.66-3.625c8.743-4.007 14.393-12.83 14.393-22.479 0-13.613-11.025-24.689-24.576-24.689-7.85 0-15.042 3.637-19.736 9.977l-3.204-2.372c5.373-7.259 13.948-11.592 22.94-11.592 15.75 0 28.563 12.864 28.563 28.675-.001 11.202-6.562 21.45-16.72 26.105z"/></g><g>
+            <path fill="#FFFFFF" d="M94.466 110.599H18.497C8.297 110.599 0 102.268 0 92.026c0-8.853 6.187-16.372 14.651-18.163.79-15.372 13.498-27.636 29.005-27.636 13.713 0 25.557 9.76 28.391 23.031a20.04 20.04 0 0 1 3.376-.292c11.263 0 20.426 9.2 20.426 20.508 0 .154-.002.309-.006.466 4.646 1.07 8.047 5.207 8.049 10.187 0 5.433-4.141 9.911-9.42 10.424l-.006.048zm-3.214-4.161 1.667.145c.181.016.36.03.542.03 3.554 0 6.445-2.909 6.445-6.485-.002-3.522-2.745-6.363-6.246-6.468l-2.174-.064.254-2.159c.082-.705.122-1.347.122-1.962 0-9.109-7.374-16.521-16.438-16.521-1.462 0-2.955.211-4.439.628l-2.205.618-.31-2.269C66.78 59.55 56.112 50.214 43.657 50.214c-13.817 0-25.058 11.29-25.058 25.167l.005 1.961-1.767.202c-7.326.838-12.85 7.064-12.85 14.482 0 8.042 6.509 14.586 14.51 14.586h72.709l.046-.174z"/></g><g>
+            <path fill="#FFFFFF" d="m27.898 76.656-3.987-.014c.042-11.621 9.494-21.077 21.071-21.077v3.987c-9.386.001-17.05 7.674-17.084 17.104z"/></g></svg>
         </div>
-
+        <div class="page-name">
+            Crazy weather app
+        </div>
+    </section>
+    <section class="flex-ver-center-con">
+        <div class="localWheater" >weather symbol  </div>
+        <div class="localTemp"> localTemp  </div>
+        <div class="locationDisplay">location</div>
     </section>
 </header>
-<div  class="container">
+
 <main>
-    <section >
-        <h2>Wat zeggen klanten over ons</h2>
-
-        <div class="ReviewCard">
-            <div>
-                <img style="position: sticky" alt="quote"  src="assets/icons/quote-left.png"/>
-            </div>
-            <div>
-                <p>Al jaren klant bij Domein.shop. De service is goed en medewerkers zijn zeer klantvriendelijk. Snelle
-                    response, zelfs op momenten dat je het niet verwacht.
-                </p>
-                <div class="rContrainer">
-                    <img class="avatarImage" src="assets/images/avatar-jane.png" alt="Jane">
-                    <p style="padding-top:1rem">Jane Doe, Managing Director</p>
-                </div>
-
-            </div>
-            </div>
-        <div class="ReviewCard">
-            <div>
-                <img style="position: sticky" alt="quote"  src="assets/icons/quote-left.png"/>
-            </div>
-            <div>
-                <p>Ik ben tevreden over Domein.shop. Met name de snelle reactie op mijn vragen en goede service maakt dat ik
-                    TransIP aan iedereen aanbeveel.
-                </p>
-                <div class="rContrainer">
-                    <img class="avatarImage" src="assets/images/avatar-john.png" alt="John">
-                    <p style="padding-top:1rem">John Smith, Frontend Developer</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section >
-        <h2>Wij staan voor je klaar</h2>
-        <img class="supportImage" src="assets/images/callcenter.jpg" alt="calcenter">
-        <p style="margin-left: 0">
-            Je kunt 7 dagen per week bij ons terecht. Ons team van vakkundige medewerkers helpt je graag op weg.
-            </p><button class="s-button">Neem contact op</button>
-    </section>
-
     <section>
-
-        <h2>veelgestelde vragen</h2>
-
-        <details>
-            <summary>
-                Wat is een goede domeinnaam?
-            </summary>
-            <div>
-            Een goede domeinnaam moet aan enkele eisen voldoen. Ten eerste mag jouw domeinnaam niet in strijd zijn met de openbare orde of de goede zeden. Dit betekent dat je geen ongepaste domeinnaam mag registreren. Verder mag een domeinnaam enkel uit letters, cijfers en eventueel een liggend streepje bestaan. Andere leestekens zijn niet toegestaan.
-
+<div class="card">
+    <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false">
+        <button><img src="assets/images/search.png" alt="search icon"></button>
+    </div>
+    <div class="weather">
+        <img src="assets/images/clear.png" alt="weather-icon">
+        <h1 class="temp">22°C</h1>
+        <h2 class="city">New York</h2>
+        <div class="detail">
+            <div class="col">
+                <img src="assets/images/humidity.png" alt="luchtvochtigheid">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>humidity</p>
+                </div>
             </div>
-        </details>
-        <details>
-            <summary>
-                Welke extensie moet ik kiezen voor mijn domeinnaam?
-            </summary>
-            <div>
-            Je mag helemaal zelf kiezen welke extensie jouw domeinnaam krijgt. Dit kan een .nl-extensie zijn, maar ook een .be-extensie, een .de-extensie of een .com-extensie. Vraag jezelf af op welke markt je je gaat richten, in het heden én in de toekomst. Ben je niet van plan je business de grens over te brengen? Dan heb je eigenlijk alleen een .nl-domeinnaam nodig. Je kunt andere extensies registreren om te voorkomen dat anderen dit doen, maar deze domeinnamen ga je waarschijnlijk niet zelf gebruiken.
+            <div class="col">
+                <img src="assets/images/wind.png" alt="wind">
+                <div>
+                    <p class="wind">20 km/h</p>
+                    <p>wind speed</p>
+                </div>
             </div>
-        </details>
-        <details>
-            <summary>
-                Wat moet ik doen als mijn domeinnaam al geregistreerd is?
-            </summary>
-            <div>
-            Is de domeinnaam die jij wil registreren, al geregistreerd door iemand anders? Dan kun je deze niet opnieuw registreren. Jouw domeinnaam moet namelijk uniek zijn. Als je gewenste domeinnaam al geregistreerd is, heb je twee mogelijkheden. Ten eerste kun je ervoor kiezen een alternatieve domeinnaam te registreren. Dit kan een domeinnaam zijn die op jouw eerste keuze lijkt, maar ook een heel ander domein. Je vindt vanzelf wel een goede domeinnaam die nog vrij is.
-            </div>
-        </details>
-        <details>
-            <summary>
-                Is het mogelijk meerdere domeinnamen te registreren?
-            </summary>
-            <div>
-            Ja, het is zeker mogelijk meerdere domeinnamen te registreren. Als je zou willen, kun je wel tientallen domeinnamen registreren. Houd er wel rekening mee dat iedere domeinnaam die je registreert, geld kost. Hoe meer domeinnamen je registreert, des te meer geld je moet betalen voor deze domeinen.
-            </div>
-        </details>
-        <details>
-            <summary>
-                Is het mogelijk een domeinnaam te registreren en deze niet te gebruiken?
-            </summary>
-            <div>
-            Ja, je kunt een domeinnaam registreren zonder deze te gebruiken. Dit gebeurt regelmatig. Ten eerste zijn er veel ondernemers die de domeinnaam van hun nieuwe bedrijf alvast registreren, terwijl ze nog lang geen website hebben. Zij willen simpelweg zeker weten dat de domeinnaam nog beschikbaar is als hun website af is en registreren deze daarom alvast. Verstandig, zeker als je een domeinnaam wil registreren die andere mensen ook interessant kunnen vinden.
-            </div>
-        </details>
-    </section>
-    <br>
 
-
-</main>
+        </div>
+    </div>
 </div>
-<footer>
-    Copyright © 2022, all rights reserved.
-</footer>
+    </section>
+</main>
 
+<footer id="footer">
+    <div style="display: block" >Copyright © 2024, all rights reserved.</div>
+</footer>
+<script>
+
+    // Get the button and display elements
+    //const getLocationBtn = document.getElementById("getLocationBtn");
+    const locationDisplay = document.querySelector(".locationDisplay");
+    const localTempDisplay = $(".localTemp");
+    let localCity = "";
+    // Function to get the current location
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+            locationDisplay.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    // Function to display the position (latitude and longitude)
+    function showPosition(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        console.log(position)
+        //locationDisplay.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
+
+        const nominatimUrl = `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`;
+
+        fetch(nominatimUrl)
+            .then(response => response.json())
+            .then(data => {
+                localCity = data.address.municipality || data.address.city || data.address.town || data.address.village;
+                locationDisplay.textContent = `${localCity}`;
+                checkWeather(localCity);
+                console.log("City data");
+                console.log(data);
+            })
+            .catch(error => {
+                locationDisplay.textContent = "Error fetching the city: " + error;
+            });
+    }
+
+
+
+    // Handle possible errors
+    function showError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                locationDisplay.innerHTML = "User denied the request for Geolocation.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                locationDisplay.innerHTML = "Location information is unavailable.";
+                break;
+            case error.TIMEOUT:
+                locationDisplay.innerHTML = "The request to get user location timed out.";
+                break;
+            case error.UNKNOWN_ERROR:
+                locationDisplay.innerHTML = "An unknown error occurred.";
+                break;
+        }
+    }
+
+    // Attach event listener to the button
+    //getLocationBtn.addEventListener("click", getLocation);
+
+
+
+    const apiKey = "36610d6740d0996f58a7fd73780155a8";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&";
+
+    const searchBox = $(".search input");
+    const searchBtn = $(".search button");
+
+    getLocation();
+
+    async function checkWeather(city){
+        const response = await fetch(apiUrl + `q=${city}` + `&appid=${apiKey}`);
+        var data = await response.json();
+
+
+
+        const searchCity = $(".city");
+        searchCity.text(data.name);
+        $(".temp").text(Math.round(data.main.temp) + " °C");
+        $(".humidity").text(data.main.humidity + " %");
+        $(".wind").text(data.wind.speed + " km/h");
+
+        if(city === localCity){
+            localTempDisplay.text(`${Math.round(data.main.temp)}°C ` );
+        }
+
+
+        console.log(data);
+    }
+    searchBtn.click(()=>{
+        console.log("click");
+        console.log(searchBox.val());
+        checkWeather(searchBox.val());
+    });
+
+
+
+</script>
 </body>
 
 </html>
